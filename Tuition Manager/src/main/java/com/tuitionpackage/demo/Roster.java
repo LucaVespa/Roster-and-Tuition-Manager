@@ -145,23 +145,24 @@ public class Roster {
         if ( index == NOT_FOUND) {
             return false;
         }
-        student = roster[index];
-         if (student instanceof Resident newStudent) {
+
+        Student tempStudent = roster[index];
+         if (tempStudent instanceof Resident newStudent) {
             if(roster[index] instanceof Resident newIndex) {
-                roster[index] = new Resident(roster[index].getProfile(), newStudent.getMajor(), roster[index].getCreditCompleted(), newIndex.getScholarship());
+                roster[index] = new Resident(roster[index].getProfile(), student.getMajor(), roster[index].getCreditCompleted(), newIndex.getScholarship());
             }
 
-        } else if (student instanceof TriState newStudent) {
+        } else if (tempStudent instanceof TriState newStudent) {
             if(roster[index] instanceof TriState newIndex) {
-                roster[index] = new TriState(roster[index].getProfile(), newStudent.getMajor(), roster[index].getCreditCompleted(), newIndex.getState());
+                roster[index] = new TriState(roster[index].getProfile(), student.getMajor(), roster[index].getCreditCompleted(), newIndex.getState());
             }
 
-        } else if (student instanceof International newStudent) {
+        } else if (tempStudent instanceof International newStudent) {
             if(roster[index] instanceof International newIndex) {
-                roster[index] = new International(roster[index].getProfile(), newStudent.getMajor(), roster[index].getCreditCompleted(), newIndex.isStudyAbroad());
+                roster[index] = new International(roster[index].getProfile(), student.getMajor(), roster[index].getCreditCompleted(), newIndex.isStudyAbroad());
             }
-        } else if (student instanceof NonResident newStudent) {
-             roster[index] = new NonResident(roster[index].getProfile(), newStudent.getMajor(), roster[index].getCreditCompleted());
+        } else if (tempStudent instanceof NonResident newStudent) {
+             roster[index] = new NonResident(roster[index].getProfile(), student.getMajor(), roster[index].getCreditCompleted());
 
          } else{
             return false;
