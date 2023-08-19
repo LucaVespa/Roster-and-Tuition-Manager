@@ -851,7 +851,7 @@ public class TuitionManagerController {
       if (checkIfValidMajor(commands[4])) {
          Student studentToChange = createNonResident(commands);
          if (roster.contains(studentToChange)) {
-            roster.changeMajor(createNonResident(commands));
+            roster.changeMajor(studentToChange);
             messageBoard.setText(studentToChange.getProfile().toString() + " major changed to " + commands[4]);
          } else {
             messageBoard.setText(studentToChange.getProfile().toString() + " is not in the roster.");
