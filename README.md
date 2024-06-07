@@ -1,8 +1,7 @@
 # Roster-and-Tuition-Manager
-[![Video](https://img.youtube.com/vi/WmBQkrrNA9E/hqdefault.jpg)](https://www.youtube.com/watch?v=WmBQkrrNA9E)  
-https://youtu.be/WmBQkrrNA9E  
-  
-This project is a simple roster/tuition manager that would be used by an administrative member. For an in-depth explanation be sure to check the video linked above.  
-The program was originally written to work in the command line with no proper GUI. As such some of the design choices/code structure may seem a bit strange in the context of JavaFX since I built on top of what I had instead of starting over.
+[![Video](https://img.youtube.com/vi/vFZhj8baE2Y /hqdefault.jpg)](https://www.youtube.com/watch?v=WmBQkrrNA9E)  
+https://youtu.be/vFZhj8baE2Y
 
-Comments may be a bit excessive due to project guidelines.
+This project functions as a flight booking and management platform. It includes different systems for customers, representatives, and administrators, each with a variety of different functionalities.
+
+For an in-depth explanation be sure to check the video linked above.
